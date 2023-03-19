@@ -1,0 +1,30 @@
+name: get_it_package_implementation
+description: A project in which we implement get_it with injections.
+
+# get_it is a service locator Service locator is a pattern that allows us to 
+# separate the interface from a concrete implementation and to access the
+#  concrete implementation from everywhere in our application 
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  get_it: ^7.2.0
+  injectable: ^2.1.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  injectable_generator: ^2.1.4
+  build_runner: ^2.3.3
+
+flutter:
+  uses-material-design: true
